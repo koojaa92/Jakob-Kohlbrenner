@@ -1,6 +1,6 @@
 # Jakob Kohlbrenner: Projektstand und offene Punkte
 
-Stand: 27. Oktober 2026. Entwurf, noch nicht live. Live ist bisher die Squarespace-Seite.
+Stand: 27. Oktober 2026. Die neue Seite läuft auf GitHub Pages (koojaa92.github.io/Jakob-Kohlbrenner). Unter jakob-kohlbrenner.de ist weiter die Squarespace-Seite live.
 
 ## Was steht
 - Mehrseitige statische Website (HTML, CSS, JS) aus `_content/*.html`, `_tools/projekte.json` und `_tools/build.py`.
@@ -17,3 +17,14 @@ Stand: 27. Oktober 2026. Entwurf, noch nicht live. Live ist bisher die Squarespa
 - [ ] Domain: Registrar prüfen (Squarespace), Search Console prüfen, erst dann umziehen.
 - [ ] Datenschutz und Impressum rechtlich prüfen.
 - [ ] Schreibweisen klären: Siepmann/Siebmann, „Führungskolleg“.
+
+## Entschieden (27.10.)
+- Entwurf gefällt (modern, schneller greifbar). Feinschliff bei Farben, Abständen und klaren Angeboten kommt später, Jakob meldet sich.
+- „Kulturentwicklung“ ist als Schlagwort nicht stark. Stattdessen „Organisationsentwicklung“ prüfen (Seitenname, Menü, Titel). Pfad `/kulturentwicklung` bleibt wegen der Google-Platzierung bestehen.
+- SEO für Graphic Recording in Freiburg und Süddeutschland, dazu Vergleich mit Kolleginnen und Kollegen (Marktanalyse, Keywords).
+- Essential Guidance vorerst raus, kommt später mit anderem Titel als Verlinkung zurück.
+
+## Marktanalyse (noch offen)
+- Region Freiburg: Nils Theurer, Lumilla Bartsch, Christina (Nachname offen).
+- Deutschsprachig: Kommunikationslotsen, Visual Facilitators, Malte von Diesenhausen, Robin Hutz, Marie-Pascal Gaffinen, Sabina Söder.
+- Ziel: Keywords (Graphic Recording, Live-Visualisierung, Live-Zeichner, Scribing, Sketchnotes u. a.), was die Seiten zeigen und was fehlt. Google Trends: Interesse an „Graphic Recording“ seit 2022 stabil, „Sketchnotes“ seit 2021 stark gefallen.
