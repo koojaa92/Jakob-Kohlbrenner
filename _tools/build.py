@@ -9,7 +9,7 @@ import html, json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROD = "--prod" in sys.argv
 BASE = "https://www.jakob-kohlbrenner.de"
-VERSION = "2"  # bei Änderungen an styles.css oder main.js hochzählen
+VERSION = "3"  # bei Änderungen an styles.css oder main.js hochzählen
 NAME = "Jakob Kohlbrenner"
 FONTS = ("https://fonts.bunny.net/css?family=bricolage-grotesque:500,700|instrument-sans:400,500,600&display=swap"
          if PROD else
@@ -158,6 +158,9 @@ def shell(path, name, title, desc, body, og=None, extra="", noindex=False, refre
     robots = '<meta name="robots" content="noindex,follow">' if noindex else ""
     ogimg = f'<meta property="og:image" content="{BASE}/{og}">' if og else ""
     refresh_tag = f'<meta http-equiv="refresh" content="0; url={refresh}">' if refresh else ""
+    m_cta = re.search(r'<section class="cta">.*?</section>', body, re.S)
+    cta_html = m_cta.group(0) if m_cta else ""
+    main_body = body.replace(cta_html, "") if m_cta else body
     foot_nav = "".join(f'<li><a href="{link(n, R)}">{t}</a></li>' for n, t in NAV)
     out = f'''<!doctype html>
 <html lang="de">
@@ -179,19 +182,23 @@ def shell(path, name, title, desc, body, og=None, extra="", noindex=False, refre
 </head>
 <body>
 <header class="kopf"><div class="wrap">
-  <a class="logo" href="{link("", R)}">{NAME}<small>Graphic Recording · Facilitation</small></a>
+  <a class="logo" href="{link("", R)}">{NAME}</a>
   <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menü</button>
   <nav class="nav" id="nav" aria-label="Hauptmenü">{nav}<a class="btn" href="{link("kontakt", R)}">Anfragen</a></nav>
-</div></header>
+<div class="progress" aria-hidden="true"><span></span></div></header>
 <main>
-{body}
+{main_body}
 </main>
+<div class="endblock">
+<figure class="endbg"><img src="{R}img/konferenz-menschen-fokus-beteiligung.jpg" alt="" loading="lazy"></figure>
+{cta_html}
 <footer><div class="wrap">
   <div><b>{NAME}</b>Graphic Recording, Facilitation und Kulturentwicklung in Freiburg, Baden-Württemberg und Süddeutschland.</div>
   <div><b>Seiten</b><ul>{foot_nav}<li><a href="{link("kontakt", R)}">Kontakt</a></li></ul></div>
   <div><b>Kontakt</b><ul><li><a href="mailto:kontakt@jakob-kohlbrenner.de">kontakt@jakob-kohlbrenner.de</a></li><li><a href="tel:+4915775353250">+49 157 75353250</a></li><li><a href="https://linkedin.com/in/jakob-kohlbrenner-58133414a" rel="noopener">LinkedIn</a></li></ul></div>
   <div class="small">© {NAME} · <a href="{link("impressum", R)}">Impressum</a> · <a href="{link("datenschutz", R)}">Datenschutz</a></div>
 </div></footer>
+</div>
 <script src="{R}js/main.js?v={VERSION}"></script>
 </body>
 </html>
@@ -203,7 +210,7 @@ def fill(body, R):
     prs = [p for p in projekte()]
     reale = [p for p in prs if not p.get("platzhalter")]
     body = re.sub(r"\{\{L:([^}]*)\}\}", lambda m: link(m.group(1), R), body)
-    body = body.replace("{{PROJEKT_TEASER}}", "".join(tile(p, R) for p in reale[:3]))
+    body = body.replace("{{PROJEKT_TEASER}}", "".join(tile(p, R) for p in reale[:6]))
     body = body.replace("{{PROJEKT_ALLE}}", "".join(tile(p, R) for p in prs))
     body = re.sub(r"\{\{FAQ:([^}]*)\}\}", lambda m: faq_html(m.group(1)), body)
     body = re.sub(r"\{\{CTA:([^|}]*)\|([^|}]*)\|([^}]*)\}\}", lambda m: cta(m.group(1), m.group(2), m.group(3), R), body)
@@ -220,14 +227,23 @@ def project_page(i, p, reale):
     paras = "".join(f"<p>{esc(a)}</p>" for a in p["absaetze"])
     pics = "".join(f'<figure class="ph"><img src="{R}img/{fn}" alt="{esc(p["titel"])}" loading="lazy"></figure>' for fn in p["bilder"])
     prev, nxt = reale[i - 1], reale[(i + 1) % len(reale)]
-    body = f'''<section class="projekt-head"><div class="wrap">
-  <a class="textlink" href="{link("projektgalerie", R)}">← Alle Projekte</a>
-  <h1>{esc(p["titel"])}</h1><div class="tags">{tags}</div></div></section>
-<section style="padding-block:0"><div class="wrap projekt-body">
+    stimme = ""
+    if p.get("stimme"):
+        st = p["stimme"]
+        stimme = f'<figure class="quote stimme"><p>„{esc(st["text"])}“</p><cite><b>{esc(st["von"])}</b>{esc(st["rolle"])}</cite></figure>'
+    sections = "".join(f'<h2>{esc(h)}</h2><p>{esc(t)}</p>' for h, t in p.get("abschnitte", []))
+    body = f'''<section class="hero">
+  <figure class="hero-bg"><img src="{R}img/{p["thumb"]}" alt="{esc(p["titel"])}" fetchpriority="high"></figure>
+  <div class="wrap"><div>
+    <a class="backlink" href="{link("projektgalerie", R)}">← Alle Projekte</a>
+    <h1>{esc(p["titel"])}</h1><div class="tags">{tags}</div>
+  </div></div>
+</section>
+<section><div class="wrap projekt-body">
   <aside>{aside}</aside>
-  <div class="prose"><p class="zitat" style="color:var(--ink)">„{esc(p["zitat"])}“</p>{paras}</div>
+  <div class="prose"><p class="zitat">„{esc(p["zitat"])}“</p>{paras}{sections}{stimme}</div>
 </div></section>
-<section style="padding-top:0"><div class="wrap"><div class="masonry">{pics}</div>
+<section><div class="wrap"><div class="masonry">{pics}</div>
   <div class="prevnext"><a href="{link(prev["pfad"], R)}">← {esc(prev["titel"])}</a><a href="{link(nxt["pfad"], R)}">{esc(nxt["titel"])} →</a></div></div></section>
 {cta("Ein ähnliches Projekt?", "Erzähl mir von deiner Veranstaltung. Das Erstgespräch ist kostenfrei.", "Jetzt anfragen →", R)}'''
     title = f'{p["titel"]} | {NAME}'

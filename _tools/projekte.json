@@ -5,12 +5,19 @@
       "pfad": "projektgalerie/jobradmnchen/graphicrecording",
       "titel": "JobRad München",
       "zitat": "Visualisierung schafft eine gemeinsame Sprache für Veränderung",
-      "filter": ["Graphic Recording", "Facilitation"],
+      "filter": [
+        "Graphic Recording",
+        "Facilitation"
+      ],
       "ort": "München",
       "format": "Summit, rund 120 Teilnehmende",
       "zeit": "Oktober 2023",
       "thumb": "jobrad-m-nchen-567.jpg",
-      "bilder": ["jobrad-mu-nchen-571.jpg", "jobrad-mu-nchen-574.jpg", "jobrad-mu-nchen-569.jpg"],
+      "bilder": [
+        "jobrad-mu-nchen-571.jpg",
+        "jobrad-mu-nchen-574.jpg",
+        "jobrad-mu-nchen-569.jpg"
+      ],
       "absaetze": [
         "Beim Jobrad Summit in München kamen rund 120 Menschen zusammen, um gemeinsam die Zukunft von Employer Branding und einer nachhaltigen Mobilitätskultur zu gestalten. In verschiedenen Workshops wurden Perspektiven geteilt, Ideen entwickelt und mutige Schritte in Richtung einer neuen Unternehmenskultur gedacht.",
         "Ein besonderer Moment war für mich die Keynote von Anselm Pahnke: Er berichtete von seiner Fahrradtour durch Afrika – eine Reise ins Unbekannte, voller Transformation und Fragen nach dem, was wirklich zählt. Seine Bilder und Geschichten haben mich ebenso wie viele andere tief bewegt.",
@@ -22,11 +29,17 @@
       "pfad": "projektgalerie/sustainable-ag-organisationsentwicklung-amp-team-facilitation-februar-2024",
       "titel": "sustainable AG Teamentwicklung",
       "zitat": "Kollektive Formate machen Teamkultur spürbar und lebendig.",
-      "filter": ["Graphic Recording", "Facilitation"],
+      "filter": [
+        "Graphic Recording",
+        "Facilitation"
+      ],
       "ort": "München",
       "format": "Teamevent",
       "thumb": "sustainable-1539-251f.jpg",
-      "bilder": ["sustainable-0795-a480.jpg", "sustainable-1539-6078.jpg"],
+      "bilder": [
+        "sustainable-0795-a480.jpg",
+        "sustainable-1539-6078.jpg"
+      ],
       "absaetze": [
         "Für die Nachhaltigkeitsberatung Sustainable in München gestaltete ich gemeinsam mit Markus Wanner ein intensives Teamevent zur Führungskräfteentwicklung. Mit interaktiven Dialogformaten, Teambuilding-Elementen und visueller Begleitung wurden Zusammenarbeit, Vertrauen und kollektive Intelligenz gestärkt. Der Tag führte zu nachhaltigen Impulsen für Kulturentwicklung und zeigte, wie Facilitation Organisationen über ein einzelnes Event hinaus bewegen kann."
       ]
@@ -35,11 +48,19 @@
       "pfad": "projektgalerie/blog-post-title-visual-thinking",
       "titel": "Visualisierungsworkshop Freiburg VHS",
       "zitat": "Jeder Mensch kann zeichnen – und dadurch sichtbar machen, was wirkt.",
-      "filter": ["Workshop & Führung"],
+      "filter": [
+        "Workshop & Führung"
+      ],
       "ort": "Freiburg",
       "format": "Workshop",
       "thumb": "stifte.png",
-      "bilder": ["image-20.jpg", "image-16.jpg", "image-17.jpg", "image-18.jpg", "image-35.png"],
+      "bilder": [
+        "image-20.jpg",
+        "image-16.jpg",
+        "image-17.jpg",
+        "image-18.jpg",
+        "image-35.png"
+      ],
       "absaetze": [
         "In Freiburg gebe ich regelmäßig Workshops zu Visual Thinking und Graphic Recording. Die Teilnehmenden erleben, wie sie mit einfachen Strichen komplexe Ideen sichtbar machen können, und verlieren ihre Angst vor dem Zeichnen. Mit spielerischen Übungen, Praxisnähe und kreativen Methoden werden innere Potenziale freigesetzt – ein Beitrag zu Lernkultur, Kreativität und Empowerment in Teams."
       ]
@@ -48,23 +69,46 @@
       "pfad": "projektgalerie/blog-post-title-four-yzrk6-zx87y",
       "titel": "Junges Führungskolleg Freiburg Schauinsland",
       "zitat": "Führung beginnt mit Selbstführung und Zuhören.",
-      "filter": ["Graphic Recording", "Workshop & Führung"],
+      "filter": [
+        "Graphic Recording",
+        "Workshop & Führung"
+      ],
       "ort": "Schwarzwald, Freiburg Schauinsland",
       "format": "Workshop mit 20 jungen Führungskräften, Thales Akademie",
       "thumb": "jakob-graphic-recording-f-hrungskolleg-9e32.jpg",
-      "bilder": ["junges-fuehrungskolleg-2024-weiterbildun.jpg", "junges-fuehrungskolleg-2024-weiterbildun-b2e3.jpg", "thales-fuehrungskolleg-15.jpg", "66-dscf6422-412d.jpg", "generative-scribing-f-hrungsworkshop.jpg"],
+      "bilder": [
+        "junges-fuehrungskolleg-2024-weiterbildun.jpg",
+        "junges-fuehrungskolleg-2024-weiterbildun-b2e3.jpg",
+        "thales-fuehrungskolleg-15.jpg",
+        "66-dscf6422-412d.jpg",
+        "generative-scribing-f-hrungsworkshop.jpg"
+      ],
       "absaetze": [
         "Mit 20 jungen Führungskräften der Thales Akademie im Schwarzwald begleitete ich einen intensiven Workshop zu Selbstführung, Zuhören und innerer Klarheit. Durch Facilitation und Generative Scribing konnten nicht nur Inhalte, sondern auch persönliche Entwicklungsprozesse sichtbar werden. Der Workshop verband Visual Thinking mit tiefer Reflexion – ein Lernraum, in dem sich Führungskompetenz aus Erfahrung und Resonanz entwickelte."
-      ]
+      ],
+      "stimme": {
+        "text": "Im Führungskolleg hat Jakob die mehrmonatige Lernreise aller Teilnehmenden in kraftvolle Bilder und Worte gefasst. Er hat die Landschaft der Herausforderungen und Lösungen wunderbar strukturiert und veranschaulicht. Das war für alle enorm hilfreich in diesem innovativen Bildungsprojekt für junge Führungskräfte. Wir sind Jakob total dankbar für seine kreativen und charismatischen Impulse!",
+        "von": "Dr. Philippe Merz",
+        "rolle": "Gründer & Geschäftsführer, Thales-Akademie"
+      }
     },
     {
       "pfad": "projektgalerie/blog-post-title-four-yzrk6-e3xx8",
       "titel": "Utopie-Konferenz",
       "zitat": "Utopien werden lebendig, wenn wir sie gemeinsam gestalten und sichtbar machen.",
-      "filter": ["Graphic Recording", "Facilitation"],
+      "filter": [
+        "Graphic Recording",
+        "Facilitation"
+      ],
       "format": "Konferenz mit 600 Teilnehmenden",
       "thumb": "martin-rink-fotografie-1627-6c32.jpg",
-      "bilder": ["martin-rink-fotografie-1631.jpg", "martin-rink-fotografie-1596.jpg", "martin-rink-fotografie-1480-7d56.jpg", "martin-rink-fotografie-1443.jpg", "bildschirmfoto-2025-09-10-um-01-11-41.png"],
+      "bilder": [
+        "martin-rink-fotografie-1631.jpg",
+        "martin-rink-fotografie-1596.jpg",
+        "martin-rink-fotografie-1480-7d56.jpg",
+        "martin-rink-fotografie-1443.jpg",
+        "bildschirmfoto-2025-09-10-um-01-11-41.png"
+      ],
       "absaetze": [
         "Die Utopie-Konferenz mit 600 Teilnehmenden – u. a. Richard David Precht und Maja Göpel – war geprägt von Zukunftsvisionen und gesellschaftlichen Leitfragen. Mit einem interaktiven Eventdesign, World Café und Festival-Atmosphäre entstand ein Raum echter Aufbruchsstimmung. Gemeinsam mit einer Kollegin visualisierte ich die Keynotes und Dialoge im Tandem-Generative Scribing – Kunst in Aktion, die Utopien sichtbar machte."
       ]
@@ -73,10 +117,19 @@
       "pfad": "projektgalerie/blog-post-title-four-yzrk6",
       "titel": "Siepmann Werke Führungsteam Entwicklung",
       "zitat": "Werte werden stark, wenn Menschen sie selbst gestalten und leben.",
-      "filter": ["Facilitation", "Workshop & Führung"],
+      "filter": [
+        "Facilitation",
+        "Workshop & Führung"
+      ],
       "format": "Führungskräftetag zur Werteentwicklung",
       "thumb": "persta-250509-457.jpg",
-      "bilder": ["persta-250509-289.jpg", "persta-250509-313.jpg", "persta-250509-343.jpg", "persta-250509-426.jpg", "persta-250509-451-7dbe.jpg"],
+      "bilder": [
+        "persta-250509-289.jpg",
+        "persta-250509-313.jpg",
+        "persta-250509-343.jpg",
+        "persta-250509-426.jpg",
+        "persta-250509-451-7dbe.jpg"
+      ],
       "absaetze": [
         "Für die Siebmann-Werke konzipierte und moderierte ich gemeinsam mit Charlotte Nowak einen Führungskräftetag mit Fokus auf Werteentwicklung. Ausgehend vom Light-Build entstanden mithilfe von partizipativen Formaten, Prozessbegleitung und Visualisierung authentische Leitwerte, die von Mitarbeitenden selbst entwickelt und verkörpert wurden. Besonders berührend war, wie auch faktenorientierte Führungskräfte sich öffneten und durch Kunst und Dialog inspiriert wurden."
       ]
@@ -85,10 +138,19 @@
       "pfad": "projektgalerie/blog-post-title-four-yzrk6-pd983",
       "titel": "Konferenz: Bildung und Schule & Digitalisierung",
       "zitat": "Wenn Zukunft von Bildung sichtbar wird, entsteht Resonanz und Mut zum Wandel.",
-      "filter": ["Graphic Recording", "Facilitation"],
+      "filter": [
+        "Graphic Recording",
+        "Facilitation"
+      ],
       "format": "Großgruppen-Konferenz mit über 200 Teilnehmenden, Club of Rome Schulnetzwerk",
       "thumb": "img-2805.jpg",
-      "bilder": ["img-2800-a2da.jpg", "img-2809-56c2.jpg", "img-2797.jpg", "img-2825.jpg", "img-2810.png"],
+      "bilder": [
+        "img-2800-a2da.jpg",
+        "img-2809-56c2.jpg",
+        "img-2797.jpg",
+        "img-2825.jpg",
+        "img-2810.png"
+      ],
       "absaetze": [
         "Bei einer großen Konferenz des Club of Rome-Schulnetzwerks mit über 200 Schüler:innen, Lehrer:innen und pädagogischen Fachkräften stand die Frage im Raum: Wie sieht Lernen im digitalen Zeitalter aus? Mit partizipativen Großgruppenformaten wie Fishbowl und World Café sowie einem strategischen Harvesting- und Visualisierungskonzept entstand ein lebendiger Prozess, in dem echte Begegnung und Innovation möglich wurden. Durch meine Facilitation und die visuelle Prozessbegleitung konnten komplexe Themen klarer sichtbar und für die Gruppe nutzbar gemacht werden."
       ]
@@ -97,13 +159,17 @@
       "platzhalter": true,
       "titel": "Neues Projekt (Platzhalter)",
       "zitat": "Hier erscheint das nächste Projekt: Titel, Ort, Bilder und ein kurzer Text.",
-      "filter": ["Graphic Recording"]
+      "filter": [
+        "Graphic Recording"
+      ]
     },
     {
       "platzhalter": true,
       "titel": "Neues Projekt (Platzhalter)",
       "zitat": "Hier erscheint das nächste Projekt: Titel, Ort, Bilder und ein kurzer Text.",
-      "filter": ["Facilitation"]
+      "filter": [
+        "Facilitation"
+      ]
     }
   ]
 }

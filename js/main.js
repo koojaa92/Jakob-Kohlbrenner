@@ -5,6 +5,16 @@
   function setKopf() { if (kopf) document.documentElement.style.setProperty('--kopf', kopf.offsetHeight + 'px'); }
   setKopf(); window.addEventListener('resize', setKopf);
 
+  // Fortschrittslinie beim Scrollen
+  var bar = document.querySelector('.progress span'), ticking = false;
+  function progress() {
+    var h = document.documentElement.scrollHeight - innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, scrollY / h) : 0) + ')';
+    ticking = false;
+  }
+  addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(progress); } }, { passive: true });
+  progress();
+
   // Menü am Handy
   var btn = document.querySelector('.menu-btn'), nav = document.querySelector('.nav');
   if (btn && nav) btn.addEventListener('click', function () {

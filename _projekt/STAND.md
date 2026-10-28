@@ -28,3 +28,14 @@ Stand: 27. Oktober 2026. Die neue Seite läuft auf GitHub Pages (koojaa92.github
 - Region Freiburg: Nils Theurer, Lumilla Bartsch, Christina (Nachname offen).
 - Deutschsprachig: Kommunikationslotsen, Visual Facilitators, Malte von Diesenhausen, Robin Hutz, Marie-Pascal Gaffinen, Sabina Söder.
 - Ziel: Keywords (Graphic Recording, Live-Visualisierung, Live-Zeichner, Scribing, Sketchnotes u. a.), was die Seiten zeigen und was fehlt. Google Trends: Interesse an „Graphic Recording“ seit 2022 stabil, „Sketchnotes“ seit 2021 stark gefallen.
+
+## Design-Runde 28.10. (umgesetzt)
+- Ruhigere Farben: Petrol als einzige Akzentfarbe, Sandton für Hervorhebungen, dünne ockerfarbene Fortschrittslinie unter dem Menü.
+- Jede Seite startet mit einem Vollbild-Hintergrundbild. Bild und Text nebeneinander sind gleich hoch. Abschnitte wechseln automatisch zwischen hell und grau.
+- Schriften kleiner, Stimmen ruhiger. Aufruf am Ende und Fuß bilden einen dunklen Block mit Bild.
+- Logo nur als Name in einer Zeile. Startseite zeigt bis zu 6 Projekte.
+- Projektseiten haben Platz für Abschnitte (`abschnitte` in `_tools/projekte.json`) und eine Kundenstimme (`stimme`).
+
+## Offen für längere Projektbeschreibungen
+- [ ] Pro Projekt: Anlass, Aufgabe, Vorgehen, Ergebnis, Zitat, Zahl der Teilnehmenden, Jahr, Freigaben. Ohne diese Angaben bleiben die Texte bei den bisherigen kurzen Beschreibungen.
+- [ ] Weitere Projekte samt Bildern (Ordner je Projekt mit `info.txt`).
