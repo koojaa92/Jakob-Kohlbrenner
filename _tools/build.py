@@ -9,7 +9,7 @@ import html, json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROD = "--prod" in sys.argv
 BASE = "https://www.jakob-kohlbrenner.de"
-VERSION = "3"  # bei Änderungen an styles.css oder main.js hochzählen
+VERSION = "4"  # bei Änderungen an styles.css oder main.js hochzählen
 NAME = "Jakob Kohlbrenner"
 FONTS = ("https://fonts.bunny.net/css?family=bricolage-grotesque:500,700|instrument-sans:400,500,600&display=swap"
          if PROD else
@@ -206,12 +206,25 @@ def shell(path, name, title, desc, body, og=None, extra="", noindex=False, refre
     return out
 
 
+def stimmen(nur_echt=False):
+    daten = json.load(open(os.path.join(ROOT, "_tools/stimmen.json"), encoding="utf-8"))["stimmen"]
+    out = ""
+    for st in daten:
+        if st.get("platzhalter"):
+            if not nur_echt:
+                out += '<figure class="quote platzhalter"><p>Hier erscheint eine weitere Kundenstimme.</p><cite><b>Name</b>Organisation</cite></figure>'
+            continue
+        out += f'<figure class="quote"><p>„{esc(st["text"])}“</p><cite><b>{esc(st["von"])}</b>{esc(st["rolle"])}</cite></figure>'
+    return out
+
+
 def fill(body, R):
     prs = [p for p in projekte()]
     reale = [p for p in prs if not p.get("platzhalter")]
     body = re.sub(r"\{\{L:([^}]*)\}\}", lambda m: link(m.group(1), R), body)
     body = body.replace("{{PROJEKT_TEASER}}", "".join(tile(p, R) for p in reale[:6]))
     body = body.replace("{{PROJEKT_ALLE}}", "".join(tile(p, R) for p in prs))
+    body = body.replace("{{STIMMEN:echt}}", stimmen(True)).replace("{{STIMMEN}}", stimmen())
     body = re.sub(r"\{\{FAQ:([^}]*)\}\}", lambda m: faq_html(m.group(1)), body)
     body = re.sub(r"\{\{CTA:([^|}]*)\|([^|}]*)\|([^}]*)\}\}", lambda m: cta(m.group(1), m.group(2), m.group(3), R), body)
     return body.replace("{{R}}", R)

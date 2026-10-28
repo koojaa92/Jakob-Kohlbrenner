@@ -39,3 +39,8 @@ Stand: 27. Oktober 2026. Die neue Seite läuft auf GitHub Pages (koojaa92.github
 ## Offen für längere Projektbeschreibungen
 - [ ] Pro Projekt: Anlass, Aufgabe, Vorgehen, Ergebnis, Zitat, Zahl der Teilnehmenden, Jahr, Freigaben. Ohne diese Angaben bleiben die Texte bei den bisherigen kurzen Beschreibungen.
 - [ ] Weitere Projekte samt Bildern (Ordner je Projekt mit `info.txt`).
+
+## Design-Runde 29.10.
+- Klares, gedämpftes Blau (Akzent) und Gelb (Buttons auf Bildern, Fortschrittslinie, Hervorhebung). Dunkler Abschluss in Marineblau.
+- Mehr Raum: höherer Einstieg, längliche Angebotsbilder, größere Abstände. Logos auf Weiß mit 3 Platzhaltern (`_content/index.html`).
+- Stimmen stehen in `_tools/stimmen.json` (3 echte, 3 Platzhalter). Auch auf der Graphic-Recording-Seite. Weitere Zitate mit Freigabe von Jakob nötig.
